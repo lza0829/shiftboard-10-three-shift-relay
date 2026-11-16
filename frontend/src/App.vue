@@ -11,6 +11,7 @@
         <router-link to="/">总览</router-link>
         <router-link to="/shifts">班次</router-link>
         <router-link to="/batches">在途批次</router-link>
+        <router-link to="/relay">接力交班</router-link>
         <router-link to="/handover">交班办理</router-link>
         <router-link to="/logs">交班记录</router-link>
         <router-link to="/reconcile">交班对账</router-link>
@@ -19,11 +20,13 @@
     <div class="ribbon" aria-hidden="true">
       <span>值班中</span>
       <span class="dot">→</span>
-      <span>交班中</span>
+      <span>段1 早→晚</span>
       <span class="dot">→</span>
-      <span>接班确认</span>
+      <span>段2 晚→夜</span>
       <span class="dot">→</span>
-      <span>对账落档</span>
+      <span>段完成即锁</span>
+      <span class="dot">→</span>
+      <span>分段对账</span>
     </div>
     <main class="content">
       <router-view />
